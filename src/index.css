@@ -4,18 +4,115 @@
     box-sizing:border-box;
 }
 
-body{
+/* html, body{
     background:#0f172a;
     color:#fff;
     font-family:Inter,sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+html, body {
+    background: #2c3e50;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    background-size: 200% 200%;
+    animation: gradientAnimation 8s ease infinite;
+
+    color: #fff;
+    font-family: Inter, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#root {
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* #root {
  
   border: 1px dashed black;
-  width: 80vw;
-  height: 80vh;
+  min-width: 80%;
+  min-height: 80%;
   display: flex;
   justify-content: center;
   border-radius: 10px;
+} */
+
+
+/* #root {
+    min-width: 80%;
+    min-height: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 2px dashed transparent;
+
+    background:
+        linear-gradient(to right, #64b3f4, #c2e59c) padding-box,
+        linear-gradient(90deg, #3498db, #2c3e50, #64b3f4) border-box;
+
+
+        
+    background-size: 200% 200%;
+    animation: rootGradient 8s ease infinite;
+}
+
+@keyframes rootGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+#root {
+    min-width: 80%;
+    min-height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 2px dashed transparent;
+
+    background:
+        linear-gradient(to right, #5691c8, #457fca) padding-box,
+        linear-gradient(90deg, #5691c8, #457fca, #5691c8) border-box;
+
+    background-size: 200% 200%;
+    animation: rootGradient 8s ease infinite;
+}
+
+@keyframes rootGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

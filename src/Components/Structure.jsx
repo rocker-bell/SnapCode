@@ -144,6 +144,17 @@ const Structure = () => {
         printWindow.close();
     };
 
+    const handleCopy = async () => {
+    const code = textRef.current.value;
+
+    try {
+        await navigator.clipboard.writeText(code);
+        alert("Code copied!");
+    } catch (error) {
+        console.error("Copy failed:", error);
+    }
+};
+
     return (
         <div className="structure-wrapper">
 
@@ -174,7 +185,10 @@ const Structure = () => {
                             Theme
                         </button>
 
-                        <button className="tool-btn">
+                        <button 
+                        className="tool-btn"
+                        onClick = {handleCopy}
+                        >
                             <FiCopy />
                             Copy
                         </button>
@@ -201,7 +215,7 @@ const Structure = () => {
                             <span className="green"></span>
 
                             <div className="filename">
-                                App.jsx
+                                snapCode
                             </div>
                         </div>
 
