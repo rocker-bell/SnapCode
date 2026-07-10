@@ -1,16 +1,78 @@
-# React + Vite
+# SnapCode
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean code printing tool designed to create organized **black & white code snapshots** ready for printing.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 📝 Write and organize code in a clean editor
+* 🖨️ Print code in a professional black & white format
+* 📋 Copy code instantly to clipboard
+* 🎨 Customizable themes and backgrounds
+* 📄 Clean print layout optimized for readability
+* ⚡ Fast and lightweight interface
 
-## React Compiler
+## 🎯 Purpose
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+SnapCode helps developers create clear, printable versions of their code without unnecessary distractions.
 
-## Expanding the ESLint configuration
+Whether you need:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Code documentation
+* Classroom materials
+* Project notes
+* Clean code references
+* Printed snippets
+
+SnapCode provides a simple solution.
+
+## 🚀 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## 🛠️ Built With
+
+* React
+* Vite
+* CSS
+* React Icons
+
+## 📌 Usage
+
+1. Enter your code in the editor.
+2. Add an optional title.
+3. Copy or print your formatted code.
+4. Keep your code organized and readable.
+
+## 🖨️ Print Format
+
+SnapCode generates a minimal print-friendly layout:
+
+* Black text
+* White background
+* Clean typography
+* Optimized spacing
+* Easy-to-read formatting
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+Made with ❤️ for developers who appreciate clean code.
