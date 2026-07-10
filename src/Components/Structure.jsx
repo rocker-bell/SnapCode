@@ -175,7 +175,7 @@ const Structure = () => {
 
                     <div className="toolbar-right">
 
-                        <button className="tool-btn">
+                        {/* <button className="tool-btn">
                             <FiImage />
                             Background
                         </button>
@@ -183,7 +183,7 @@ const Structure = () => {
                         <button className="tool-btn">
                             <FiDroplet />
                             Theme
-                        </button>
+                        </button> */}
 
                         <button 
                         className="tool-btn"
