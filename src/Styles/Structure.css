@@ -1,0 +1,170 @@
+/* .structure-wrapper {
+   
+    min-width: 80%;
+    min-height: 80%;
+    margin: 5px 5px;
+    
+
+}
+.main-carbon {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+    border: 1px solid white;
+    padding: 5px 5px;
+    gap: 30px;
+}
+
+.options {
+    border: 1px solid black;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 50px;
+    padding: 5px 5px;
+}
+
+.option-list {
+    cursor: pointer;
+}
+
+.option-list:hover {
+    color: white;
+    transform: scale(1.5);
+}
+
+.printable-textsection {
+    width: 100%;
+    max-width: 100%;
+    min-height: 600px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+} */
+
+
+.structure-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+}
+
+.toolbar{
+    display:flex;
+    justify-content: space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    background:#1d1d1d;
+    padding:12px 18px;
+    border-radius:16px;
+    margin-bottom:25px;
+    align-items:center;
+}
+
+.toolbar button,
+.toolbar select{
+    border:none;
+    background:#2d2d2d;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.toolbar button:hover,
+.toolbar select:hover{
+    background:#4b5cff;
+}
+
+.toolbar-left {
+    border: 1px solid white;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 10px 10px;
+
+}
+.title-input {
+    width: 100%;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.toolbar-right {
+    display: flex;
+    gap: 10px;
+}
+
+.editor-card{
+    background:linear-gradient(135deg,#5b21b6,#2563eb,#06b6d4);
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 25px 60px rgba(0,0,0,.4);
+}
+
+.window-bar{
+    display:flex;
+    gap:8px;
+    margin-bottom:18px;
+}
+
+.window-bar span{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+}
+
+.red{
+    background:#ff5f56;
+}
+
+.yellow{
+    background:#ffbd2e;
+}
+
+.green{
+    background:#27c93f;
+}
+
+.printable-textsection{
+    width:850px;
+    min-height:500px;
+    background:#111827;
+    color:#fff;
+    border:none;
+    resize:none;
+    outline:none;
+    padding:25px;
+    border-radius:16px;
+    font-family:"JetBrains Mono", monospace;
+    line-height:1.7;
+}
+
+@media print {
+
+    body * {
+        visibility: hidden;
+    }
+
+    .preview-card,
+    .preview-card * {
+        visibility: visible;
+    }
+
+    .preview-card {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+
+    .printable-textsection {
+        border: none;
+        resize: none;
+    }
+}
