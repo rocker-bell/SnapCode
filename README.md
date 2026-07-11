@@ -75,4 +75,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-Made with ❤️ for developers who appreciate clean code.
+Made with ❤️ for developers who appreciate clean code. Star if you this project helpful ⭐.
