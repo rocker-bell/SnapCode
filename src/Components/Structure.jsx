@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import { applyColorTheme, initializeColorTheme } from "../utils/colorTheme";
+import { useRef, useState, useEffect } from "react";
 import Editor from "@monaco-editor/react";
 import { FiCopy, FiPrinter, FiDroplet } from "react-icons/fi";
 import "../Styles/Structure.css";
@@ -13,6 +14,8 @@ const Structure = () => {
     const [fontFamily, setFontFamily] = useState(
         "'JetBrains Mono', monospace"
     );
+
+
 
     const languages = [
         { label: "JavaScript", value: "javascript" },
@@ -151,6 +154,18 @@ const Structure = () => {
         };
     };
 
+    const [accentColor, setAccentColor] = useState(
+        () => localStorage.getItem("snapcode-color") || "#5691c8"
+    );
+
+    useEffect(() => {
+        applyColorTheme(accentColor);
+    }, [accentColor]);
+
+    const handleColorChange = (e) => {
+        setAccentColor(e.target.value);
+    };
+
     return (
         <div className="structure-wrapper">
             <div className="main-carbon">
@@ -232,6 +247,16 @@ const Structure = () => {
                                 )
                             )}
                         </select>
+                        <div className="color-picker-wrapper">
+                            <FiDroplet />
+
+                            <input
+                                type="color"
+                                value={accentColor}
+                                onChange={handleColorChange}
+                                title="Customize theme color"
+                            />
+                        </div>
 
                         <button
                             className="tool-btn"
