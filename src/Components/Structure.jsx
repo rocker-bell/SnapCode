@@ -1,4 +1,4 @@
-import { applyColorTheme, initializeColorTheme } from "../utils/colorTheme";
+import { applyColorTheme } from "../utils/colorTheme";
 import { useRef, useState, useEffect } from "react";
 import Editor from "@monaco-editor/react";
 import { FiCopy, FiPrinter, FiDroplet } from "react-icons/fi";
